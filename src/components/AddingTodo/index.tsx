@@ -27,7 +27,7 @@ export const AddingTodo = () => {
 
     return <Wrapper>
         <StyledLabel htmlFor={id}>Add a new task</StyledLabel>
-        <StyledInput id={id} value={task} onChange={handleChange} $quake={quake} placeholder="???????"/>
+        <StyledInput id={id} value={task} onChange={handleChange} $quake={quake} placeholder="?????"/>
         <StyledButton onClick={handleAdd}>Add todo</StyledButton>
     </Wrapper>
 }

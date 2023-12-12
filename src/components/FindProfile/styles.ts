@@ -1,5 +1,8 @@
 import styled, {css} from "styled-components";
 
+import {Input} from "@/components/Input";
+import {quake} from "@/constants/animations.ts";
+
 export const Wrapper = styled.div`
   ${({theme}) => css`
     display: grid;
@@ -24,6 +27,12 @@ export const Wrapper = styled.div`
   `}
 `;
 
+export const StyledInput = styled(Input)<{ $quake: boolean }>`
+  ${({$quake}) => css`
+    ${$quake && css`animation: ${quake} .25s linear infinite;`}
+  `}
+`
+
 export const StyledButton = styled.button`
   ${({theme}) => css`
     display: flex;
@@ -38,8 +47,8 @@ export const StyledButton = styled.button`
       object-fit: contain;
       width: 29px;
       height: 28px;
-      
-      circle, line{
+
+      circle, line {
         stroke: ${theme.text.text};
       }
     }

@@ -2,5 +2,6 @@ import {Urls} from "@/constants/urls.ts";
 
 export const navLinks = {
     Home: Urls.main,
-    Settings: Urls.settings
+    Settings: Urls.settings,
+    'GitHub Info': Urls.github
 }

@@ -1,8 +1,8 @@
-import {ChangeTheme} from "@/components/ChangeTheme";
+import {FindProfile} from "@/components/FindProfile";
 import {NormalizedWrapper} from "@/components/NormalizedWrapper";
 
-export const Settings = () => (
+export const GitHubInfo = () => (
     <NormalizedWrapper>
-        <ChangeTheme/>
+        <FindProfile/>
     </NormalizedWrapper>
 )

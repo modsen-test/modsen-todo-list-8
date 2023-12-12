@@ -1,4 +1,5 @@
 export enum Urls {
     main = '/',
-    settings = '/settings'
+    settings = '/settings',
+    github = '/github-info'
 }

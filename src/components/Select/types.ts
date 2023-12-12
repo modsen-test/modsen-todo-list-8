@@ -1,6 +1,7 @@
-import {SelectHTMLAttributes} from "react";
+import {HTMLAttributes} from "react";
 
-export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
-    items: { value: string, text: string }[]
-    selected?: string
+export interface SelectProps extends HTMLAttributes<HTMLDivElement> {
+    items: { value: string, label: string }[]
+    value: string,
+    onChangeValue: (value: string) => void
 }

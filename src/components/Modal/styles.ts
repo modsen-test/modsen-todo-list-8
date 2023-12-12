@@ -19,6 +19,10 @@ export const ModalBody = styled.div`
   ${({theme}) => css`
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 5px 10px;
+    box-shadow: 0 0 20px -3px ${theme.shadow.black};
     background: ${theme.bg.header};
   `}
 `;

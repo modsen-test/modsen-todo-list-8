@@ -1,7 +1,8 @@
-import styled, {css, keyframes} from "styled-components";
+import styled, {css} from "styled-components";
 
 import {Button} from "@/components/Button";
 import {Input} from "@/components/Input";
+import {quake} from "@/constants/animations.ts";
 
 export const Wrapper = styled.div`
   ${({theme}) => css`
@@ -26,24 +27,6 @@ export const StyledLabel = styled.label`
       grid-column: 1/2;
     }
   `}
-`;
-
-const quake = keyframes`
-  0%, 100% {
-    transform: translateX(0);
-  }
-
-  25% {
-    transform: translateX(-5px);
-  }
-
-  50% {
-    transform: translateX(5px);
-  }
-
-  75% {
-    transform: translateX(-5px);
-  }
 `;
 
 export const StyledInput = styled(Input)<{ $quake: boolean }>`

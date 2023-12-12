@@ -1,5 +1,6 @@
 import styled, {css} from "styled-components";
 
+import CheckedIcon from "@/assets/images/checked.svg?react";
 import {Theme} from "@/types/theme.ts";
 
 export const Wrapper = styled.div`
@@ -16,13 +17,12 @@ export const Wrapper = styled.div`
   `}
 `;
 
-export const StyledChecked = styled.img<{ $theme: Theme }>`
-  ${({$theme}) => css`
+export const StyledChecked = styled(CheckedIcon)<{ $theme: Theme }>`
+  ${({theme}) => css`
     width: 30px;
     height: 30px;
     user-select: none;
     pointer-events: none;
-    
-    ${$theme === 'dark' && css`filter: invert(1)`}
+    fill: ${theme.text.text};
   `}
 `;

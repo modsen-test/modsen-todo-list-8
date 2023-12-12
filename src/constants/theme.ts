@@ -24,7 +24,10 @@ export const lightTheme = {
         focused: colors.blue,
         link: colors.white,
     },
-    fontSizes: FontSizes
+    fontSizes: FontSizes,
+    shadow: {
+        black: colors.black
+    }
 }
 
 export type Theme = typeof lightTheme;
@@ -51,5 +54,8 @@ export const darkTheme: Theme = {
         focused: colors.blue,
         link: colors.white,
     },
-    fontSizes: FontSizes
+    fontSizes: FontSizes,
+    shadow: {
+        black: colors.black
+    }
 }

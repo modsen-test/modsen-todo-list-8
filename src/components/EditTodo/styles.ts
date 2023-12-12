@@ -23,6 +23,8 @@ export const StyledLabel = styled.label`
 `;
 
 export const StyledInput = styled(Input)`
-  border: none;
-  width: calc(100% - 50px);
+  ${({theme}) => css`
+    color: ${theme.text.button};
+    width: calc(100% - 50px);
+  `}
 `;

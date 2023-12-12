@@ -2,6 +2,7 @@ import {createBrowserRouter, Outlet} from "react-router-dom";
 
 import {Header} from "@/components/Header";
 import {Urls} from "@/constants/urls.ts";
+import {GitHubInfo} from "@/pages/GitHubInfo";
 import {Main} from "@/pages/Main";
 import {Settings} from "@/pages/Settings";
 import {Wrapper} from "@/styles.ts";
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
             {
                 path: Urls.settings,
                 element: <Settings/>
+            },
+            {
+                path: Urls.github,
+                element: <GitHubInfo/>
             }
         ]
     }

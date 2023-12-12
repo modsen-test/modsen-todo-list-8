@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
     top: 0;
     min-height: 20px;
     padding: 20px 45px;
+    z-index: 999;
   `}
 `;
 

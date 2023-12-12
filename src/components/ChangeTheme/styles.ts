@@ -1,13 +1,12 @@
 import styled, {css} from "styled-components";
 
-import {Select} from "@/components/Select";
-
-export const StyledSelect = styled(Select)`
-    ${({theme})=>css`
-      padding: 10px;
-      outline: none;
-      border: 1px solid ${theme.border.select};
-      font-size: ${theme.fontSizes.xs}px;
-      border-radius: 10px;
-    `}
+export const Wrapper = styled.div`
+  ${({theme}) => css`
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    color: ${theme.text.text};
+    font-size: ${theme.fontSizes.md}px;
+  `}
 `;

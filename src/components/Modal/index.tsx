@@ -7,7 +7,7 @@ import {ModalProps} from "@/components/Modal/types.ts";
 const modalElement = document.getElementById("modal")!;
 
 
-export const Modal = ({open, onClose, children}: ModalProps) => {
+export const Modal = ({open = true, onClose, children}: ModalProps) => {
     const element = useRef<HTMLDivElement>(document.createElement("div"));
 
     useEffect(() => {

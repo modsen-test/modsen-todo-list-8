@@ -6,19 +6,15 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 80px;
-    width: calc(100vw - 17px);
+    width: 100vw;
     height: 100vh;
     background: ${theme.bg.header};
 
     @media screen and ${theme.media.mobile} {
       top: 110px;
-    }
-
-    @media screen and ${theme.media.smallMobile} {
-      top: 130px;
     }
   `}
 `;
@@ -30,6 +26,7 @@ export const StyledLink = styled(Link)<{ $active: boolean }>`
     font-weight: ${$active ? `bold` : 'normal'};
     color: ${$active ? theme.text.activeLink : theme.text.button};
     outline: none;
+    margin: 10px 0;
   `}
 `;
 
